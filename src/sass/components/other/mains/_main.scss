@@ -1,0 +1,16 @@
+// メインコンテンツ
+
+
+// 変数・ミックスイン・関数
+@use "../../../global" as g;
+
+
+.main {
+  margin: 32px;
+
+
+  @include g.mq(md-min) {
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+}

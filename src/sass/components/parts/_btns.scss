@@ -1,0 +1,50 @@
+// ボタン
+
+
+// 変数・ミックスイン・関数
+@use "../../global/" as g;
+
+
+// もっと見る
+.moreBtn {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  border: solid 3px;
+  border-radius: 23px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: g.$accentColor;
+  transition: all 0.3s;
+
+  &--top {
+    width: 85%;
+    max-width: 400px;
+  }
+
+  &--animals {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 6px;
+    top: calc(50% - 15px);
+    font-size: 30px;
+  }
+
+  &:hover {
+    color: g.$yellow;
+  }
+
+
+  @include g.mq(md-min) {
+    &--top,
+    &--animals {
+      width: 250px;
+    }
+  }
+}

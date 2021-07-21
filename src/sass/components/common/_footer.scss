@@ -1,0 +1,11 @@
+// フッター
+
+
+@use "../../global/" as g;
+
+
+.footer {
+  padding: 4px 20px;
+  text-align: center;
+  background-color: g.$baseColor;
+}

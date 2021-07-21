@@ -1,0 +1,47 @@
+// Swiper・Animals
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/" as g;
+
+
+.animalsSwiper {
+
+  &Wrapper {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: g.$accentColor;
+    }
+
+    .swiper-button-next {
+      right: -30px;
+    }
+
+    .swiper-button-prev {
+      left: -30px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-family: "Material Icons";
+      font-size: 60px;
+    }
+
+    .swiper-button-next::after {
+      content: "\e409";
+    }
+
+    .swiper-button-prev::after {
+      content: "\e409";
+      transform: rotate(180deg);
+    }
+  }
+
+  img {
+    box-sizing: border-box;
+    border: solid 6px g.$beige;
+    border-radius: 50%;
+  }
+}

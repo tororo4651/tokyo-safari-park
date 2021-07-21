@@ -1,0 +1,35 @@
+// セクション・イベント
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/" as g;
+
+
+.eventSection {
+  max-width: 532px;
+  padding: 32px 16px;
+  margin: 0 auto;
+
+  &__heading {
+    margin-bottom: 16px;
+  }
+
+  &__card {
+    margin-bottom: 32px;
+  }
+
+
+  @include g.mq() {
+    max-width: 1200px;
+    padding: 48px 24px;
+
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__card {
+      width: calc((100% - 32px) / 3);
+    }
+  }
+}

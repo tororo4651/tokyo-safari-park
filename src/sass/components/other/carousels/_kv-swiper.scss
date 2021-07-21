@@ -1,0 +1,67 @@
+// カルーセル
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/" as g;
+
+
+// Swiper・キービジュアル
+.kvSwiper {
+  padding-bottom: 32px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: g.$accentColor;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-family: "Material Icons";
+    font-size: 60px;
+  }
+
+  .swiper-button-next::after {
+    content: "navigate_next";
+  }
+
+  .swiper-button-prev::after {
+    content: "\e408";
+  }
+
+  &.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -1px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: g.$accentColor;
+  }
+
+
+  @include g.mq(sm-min) {
+    img {
+      height: 540px;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    &.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 12px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// ベース
+@use "bases/_bases.scss";
+
+
+
+// パーツ
+
+// 見出し
+@use "components/parts/_headings.scss";
+// ボタン
+@use "components/parts/_btns.scss";
+
+
+
+// コンポーネント・共通
+
+// ヘッダー
+@use "components/common/_header.scss";
+// グローバルナビゲーション
+@use "components/common/gnav";
+// フッター
+@use "components/common/footer";
+
+
+
+// コンポーネント・その他
+
+// メインコンテンツ
+@use "components/other/mains/_main.scss";
+
+// セクション・イベント
+@use "components/other/sections/_event-section.scss";
+// セクション・ニュース
+@use "components/other/sections/news-section";
+// セクション・Animals
+@use "components/other/sections/_animals-section.scss";
+
+// カード・イベント
+@use "components/other/cards/event-card";
+
+// Swiper・キービジュアル
+@use "components/other/carousels/_kv-swiper.scss";
+// Swiper・Animals
+@use "components/other/carousels/_animals-swiper.scss";
+
+
+
+// 汎用クラス・ユーティリティクラス・Utilityクラス・ヘルパークラス
+@use "utils/_utils.scss";

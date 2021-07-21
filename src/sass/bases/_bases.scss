@@ -1,0 +1,36 @@
+// ベース
+
+
+// 変数・ミックスイン・関数
+@use "../global" as g;
+
+
+body {
+  padding-top: 68px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: g.$textColor;
+
+
+  @include g.mq(md-min) {
+    padding-top: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: g.$textColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
